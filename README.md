@@ -59,9 +59,15 @@ The ontology can be used as a knowledge representation tool for modeling a unive
 
 ## Installation
 
-To use this ontology, you will need to have Protégé installed on your system. You can download the latest version of Protégé from the official website: https://protege.stanford.edu/
+To use this ontology, you will need to have the following software installed on your system:
 
-Once you have Protégé installed, you can open the ontology file by selecting "File" > "Open" and selecting the `.owl` file.
+- Protégé: A free and open-source ontology editor and framework for building intelligent systems. You can download the latest version of Protégé from the official website: https://protege.stanford.edu/
+
+- Apache Jena: A free and open-source Java framework for building Semantic Web and Linked Data applications. You can download the latest version of Apache Jena from the official website: https://jena.apache.org/download/
+
+- NetBeans: A free and open-source Integrated Development Environment (IDE) for developing Java applications. You can download the latest version of NetBeans from the official website: https://netbeans.apache.org/download/
+
+Once you have all the required software installed, you can open the ontology file in Protégé by selecting "File" > "Open" and selecting the .owl file. You can also use Apache Jena and NetBeans to develop Semantic Web and Linked Data applications that use this ontology.
 
 ## License
 
