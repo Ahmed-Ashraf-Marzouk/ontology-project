@@ -93,7 +93,7 @@ Finally, each staff can be either a manager or an instructor.
 | --- | --- |
 | Instructor | Course |
 
-**Disjoint With: `#takes`**
+**Disjoint With:** `#takes`
 
 ## #registeredBy
 
@@ -101,7 +101,7 @@ Finally, each staff can be either a manager or an instructor.
 | --- | --- |
 | Course | Student |
 
-**Inverse Of:** #takes
+**Inverse Of:**  `#takes`
 
 ## #takes
 
@@ -109,9 +109,9 @@ Finally, each staff can be either a manager or an instructor.
 | --- | --- |
 | Student | Course |
 
-**Inverse Of: #**registeredBy
+**Inverse Of:** `#registeredBy`
 
-**Disjoint With: #**isTeaching
+**Disjoint With:** `#isTeaching`
 
 ---
 
