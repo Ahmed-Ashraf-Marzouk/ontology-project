@@ -233,7 +233,7 @@ We have two version for the java application, version 1 is to use the select men
 
 ## SPARQL Queries
 
-It can be found in this [link](SPARQL-Queries.txt)
+![SPARQL Queries](assets/SPARQL-queries.png)
 
 ## Usage
 
