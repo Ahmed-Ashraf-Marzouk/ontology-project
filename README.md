@@ -1,6 +1,3 @@
-[link_dona]: https://github.com/dona-samir
-[link_steven]: https://github.com/steeevvv
-
 # UNIVERSITY ONTOLOGY
 
 # CSE488 Ontologies and the Semantic Web Project
