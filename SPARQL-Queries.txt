@@ -1,3 +1,5 @@
+String prefixes = "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                       "PREFIX sou: <http://www.semanticweb.org/kayeg/ontologies/2023/4/UniversityOntologyV1#>\n";
 Query 1
 SELECT DISTINCT?StaffName
 WHERE {?ASU sou:hasStaff?StaffName}
