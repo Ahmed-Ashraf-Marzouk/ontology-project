@@ -13,9 +13,198 @@ This ontology was built for the purpose of the CSE488 course project on Ontologi
 
 The ontology was implemented using Protégé, a free and open-source ontology editor and framework for building intelligent systems.
 
+---
+
+# Ontology Description
+
+A university ontology is meant to describe the different aspects of a university.
+
+We modeled the university as a set of departments, and a bunch of staff. 
+
+Each department has a single manager, a set of instructors, a set of courses taught within each department, and students enrolled into the department. 
+
+Each course can be either a core course or an elective course. 
+
+Each student can be either an undergraduate student or a graduate student. 
+
+Finally, each staff can be either a manager or an instructor.
+
+# Classes/Entities
+
+| Class | Subclass of |
+| --- | --- |
+| University | thing |
+|  |  |
+| Department | University |
+| ArtificialIntelligence | Department |
+| ComputerScience | Department |
+|  |  |
+| Staff | University |
+| Instructor | Staff |
+| Manager | Staff |
+|  |  |
+| Course | University |
+| CoreCourse | Course |
+| ElectiveCourse | Course |
+|  |  |
+| Student | University |
+| GraduateStudent | Student |
+| UndergraduateStudent | Student |
+
+---
+
+# Object Properties/Relationships
+
+## #hasDepartment
+
+| Domain | Range |
+| --- | --- |
+| University | Department |
+
+## #hasStaff
+
+| Domain | Range |
+| --- | --- |
+| University | Staff |
+
+## #hasStudent
+
+| Domain | Range |
+| --- | --- |
+| University | Student |
+| Department |  |
+
+## #isEnrolled
+
+| Domain | Range |
+| --- | --- |
+| Student | Department |
+
+## #isManagerOf
+
+| Domain | Range |
+| --- | --- |
+| Manager | University |
+|  | Department |
+
+## #isTeaching
+
+| Domain | Range |
+| --- | --- |
+| Instructor | Course |
+
+**Disjoint With: `#takes`**
+
+## #registeredBy
+
+| Domain | Range |
+| --- | --- |
+| Course | Student |
+
+**Inverse Of:** #takes
+
+## #takes
+
+| Domain | Range |
+| --- | --- |
+| Student | Course |
+
+**Inverse Of: #**registeredBy
+
+**Disjoint With: #**isTeaching
+
+---
+
+# Data Properties/Attributes
+
+## #address
+
+| Domain | Range |
+| --- | --- |
+| #Staff | xsd:string |
+| #Student |  |
+
+## #code
+
+| Domain | Range |
+| --- | --- |
+| #Department | xsd:string |
+| #Course |  |
+
+## #course_credit_hours
+
+| Domain | Range |
+| --- | --- |
+| #Course | xsd:double |
+
+## #dob
+
+| Domain | Range |
+| --- | --- |
+| #Student | xsd:dateTime |
+| #Staff |  |
+
+## #id
+
+| Domain | Range |
+| --- | --- |
+| #Staff | xsd:int |
+| #Student |  |
+
+## #name
+
+| Domain | Range |
+| --- | --- |
+| #Staff | xsd:string |
+| #Student |  |
+
+## #salary
+
+| Domain | Range |
+| --- | --- |
+| #Staff | xsd:int |
+
+## #student_gpa
+
+| Domain | Range |
+| --- | --- |
+| #Student | xsd:double |
+
+---
+
+# Instances
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled.png)
+
+## Instance Relations
+
+### Departments
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled%201.png)
+
+### Courses
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled%202.png)
+
+### Students
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled%203.png)
+
+### Staff
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled%204.png)
+
+# University
+
+![Untitled](Ontology%20dd1d7b57527549c6ada5ae4721e19ad6/Untitled%205.png)
+
+---
+
+
 ## RDF Graph
 
 ![rdf schema for University ontology](rdf_schema.png)
+
 
 ## Entity Constraints
 
