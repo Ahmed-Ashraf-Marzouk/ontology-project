@@ -195,7 +195,7 @@ Finally, each staff can be either a manager or an instructor.
 
 ## RDF Graph
 
-![rdf schema for University ontology](rdf_schema.jpeg)
+![rdf schema for University ontology](assets/rdf_schema.jpeg)
 
 ## Entity Constraints
 
