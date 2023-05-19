@@ -31,17 +31,24 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 ## Java Application
 
+We have two version for the java application, version 1 is to use the select menue to choose the query and version 2 is to use the text field to write the query.
+
 ### GUI
 
 ![GUI](assets/gui.jpg)
 ![Possible Queries](assets/queries.jpg)
 
-### Sample Outputs
+### Sample inputs and Outputs
 
+![Sample input - All Staff](assets/input1.jpg)
 ![Sample Output - All Staff](assets/output1.jpg)
+![Sample input - All Instances](assets/input2.jpg)
 ![Sample Output - All Instances](assets/output2.jpg)
+![Sample Output - Construct Query](assets/input3.jpg)
 ![Sample Output - Construct Query](assets/output3.jpg)
+![Sample Output - Descripe Query](assets/input4.jpg)
 ![Sample Output - Descripe Query](assets/output4.jpg)
+![Sample Output - Ask Query](assets/input5.jpg)
 ![Sample Output - Ask Query](assets/output5.jpg)
 
 ## SPARQL Queries
