@@ -33,21 +33,21 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 ### GUI
 
-![GUI](gui.jpg)
-![Possible Queries](queries.jpg)
+![GUI](assets/gui.jpg)
+![Possible Queries](assets/queries.jpg)
 
 ### Sample Outputs
 
-![Sample Output - All Staff](output1.jpg)
-![Sample Output - All Instances](output2.jpg)
-![Sample Output - Construct Query](output3.jpg)
-![Sample Output - Descripe Query](output4.jpg)
-![Sample Output - Ask Query](output5.jpg)
+![Sample Output - All Staff](assets/output1.jpg)
+![Sample Output - All Instances](assets/output2.jpg)
+![Sample Output - Construct Query](assets/output3.jpg)
+![Sample Output - Descripe Query](assets/output4.jpg)
+![Sample Output - Ask Query](assets/output5.jpg)
 
 ## SPARQL Queries
 
 1. Query Description
-   ![Query result ](sparql1.jpg)
+   ![Query result ](assets/sparql1.jpg)
 
 ## Usage
 
