@@ -94,7 +94,7 @@ Finally, each staff can be either a manager or an instructor.
 | ------ | ------- |
 | Course | Student |
 
-**Inverse Of:**  `#takes`
+**Inverse Of:** `#takes`
 
 ## #takes
 
@@ -220,15 +220,15 @@ We have two version for the java application, version 1 is to use the select men
 
 ### Sample inputs and Outputs
 
-![Sample input - All Staff](assets/input1.jpg)
+![Sample input - All Staff](assets/input1.png)
 ![Sample Output - All Staff](assets/output1.jpg)
-![Sample input - All Instances](assets/input2.jpg)
+![Sample input - All Instances](assets/input2.png)
 ![Sample Output - All Instances](assets/output2.jpg)
-![Sample Output - Construct Query](assets/input3.jpg)
+![Sample Output - Construct Query](assets/input3.png)
 ![Sample Output - Construct Query](assets/output3.jpg)
-![Sample Output - Descripe Query](assets/input4.jpg)
+![Sample Output - Descripe Query](assets/input4.png)
 ![Sample Output - Descripe Query](assets/output4.jpg)
-![Sample Output - Ask Query](assets/input5.jpg)
+![Sample inpuut - Ask Query](assets/input5.png)
 ![Sample Output - Ask Query](assets/output5.jpg)
 
 ## SPARQL Queries
