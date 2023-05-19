@@ -1,6 +1,6 @@
 # UNIVERSITY ONTOLOGY
 
-# CSE488 Ontologies and the Semantic Web Project
+## CSE488 Ontologies and the Semantic Web Project
 
 ## Introduction
 
@@ -46,12 +46,8 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 ## SPARQL Queries
 
-1. Returns Customer Names, departing and arriving airports of each ticket booked by every customer
-   ![alttext](sparql1.jpg)
-2. Returns Ticket count booked for each Flight, and shows respective plane name, flight number and flight date
-   ![alttext](sparql2.jpg)
-3. Returns all customer names, ticket proces, and booked seat number for economy class tickets
-   ![alttext](sparql3.jpg)
+1. Query Description
+   ![Query result ](sparql1.jpg)
 
 ## Usage
 
