@@ -77,10 +77,10 @@ This ontology is licensed under the Creative Commons Attribution 4.0 Internation
 
 This ontology was developed as part of the CSE488 course project at faculty of engineering - Ain Shams University by
 
-- [Kareem Amr - ](https://github.com/Kareem-Amr)
-- [Mohamed Sameh -](https://github.com/Mohamed-Sameh-Abdelaziz)
-- [Mohamed Markam -](https://github.com/MohamedMarkam)
-- [Ahmed Ashraf - 18P2981](https://github.com/Ahmed-Ashraf-Abdul-Azim)
+- [Kareem Amr - 18P9093](<https://github.com/[Kareem-Amr](https://github.com/KAYounes)>)
+- [Mohamed Sameh - 17p3033](https://github.com/mxsameh)
+- [Mohamed Markam - 19p2645](https://github.com/mohamedmakram1)
+- [Ahmed Ashraf - 18P2981](https://github.com/Ahmed-Ashraf-Marzouk)
 - [Ahmed Ali - 18P2517](https://github.com/Ahmed-Abou-Emran)
 
 Special thanks to Assoc. Prof. Ensaf Hussein and Eng. Dina Amr for their guidance and supportthroughout the project.
