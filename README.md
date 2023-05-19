@@ -191,6 +191,42 @@ Finally, each staff can be either a manager or an instructor.
 
 ![](https://github.com/Ahmed-Ashraf-Marzouk/ontology-project/blob/main/assets/university_instances.png)
 
+# Object Properties Constrains
+
+## University
+
+| Relationship | Constrain | Cardinality  | Range |
+| --- | --- | --- | --- |
+| #hasDepartment | exactly | 2 | #Department |
+| #hasManager | exactly | 1 | #Manager |
+| #hasStudents | min | 50 | #Student |
+| #hasStaff | min | 10 | #Staff |
+
+## Department
+
+| Relationship | Constrain | Cardinality  | Range |
+| --- | --- | --- | --- |
+| #hasManager | exactly | 1 | #Manager |
+| #hasStudnets | max | 100 | #Student |
+| #hasStudents | min | 10 | #Student |
+| #hasInstructor | min | 2 | #Instructor |
+
+## Staff/Instructor
+
+| Relationship | Constrain | Cardinality  | Range |
+| --- | --- | --- | --- |
+| #isTeaching | max | 4 | #Course |
+| #isTeaching | min | 1 | #Course |
+
+## Student
+
+| Relationship | Constrain | Cardinality  | Range |
+| --- | --- | --- | --- |
+| #isEnrolled | exactly | 1 | #Department |
+| #takes | max | 6 | #Course |
+| #takes | min | 3 | #Course |
+
+## Course
 ---
 
 ## RDF Graph
