@@ -4,14 +4,7 @@
 
 ## Introduction
 
-This ontology was built for the purpose of the CSE488 course project on Ontologies and the Semantic Web. The ontology represents a university and includes the following entities:
-
-- Departments
-- Staff
-- Students
-- Courses
-
-The ontology was implemented using Protégé, a free and open-source ontology editor and framework for building intelligent systems.
+This ontology was built for the purpose of the CSE488 course project on Ontologies and the Semantic Web. The ontology represents a university and it was implemented using Protégé, a free and open-source ontology editor and framework for building intelligent systems.
 
 ---
 
@@ -19,37 +12,37 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 A university ontology is meant to describe the different aspects of a university.
 
-We modeled the university as a set of departments, and a bunch of staff. 
+We modeled the university as a set of departments, and a bunch of staff.
 
-Each department has a single manager, a set of instructors, a set of courses taught within each department, and students enrolled into the department. 
+Each department has a single manager, a set of instructors, a set of courses taught within each department, and students enrolled into the department.
 
-Each course can be either a core course or an elective course. 
+Each course can be either a core course or an elective course.
 
-Each student can be either an undergraduate student or a graduate student. 
+Each student can be either an undergraduate student or a graduate student.
 
 Finally, each staff can be either a manager or an instructor.
 
 # Classes/Entities
 
-| Class | Subclass of |
-| --- | --- |
-| University | thing |
-|  |  |
-| Department | University |
-| ArtificialIntelligence | Department |
-| ComputerScience | Department |
-|  |  |
-| Staff | University |
-| Instructor | Staff |
-| Manager | Staff |
-|  |  |
-| Course | University |
-| CoreCourse | Course |
-| ElectiveCourse | Course |
-|  |  |
-| Student | University |
-| GraduateStudent | Student |
-| UndergraduateStudent | Student |
+| Class                  | Subclass of |
+| ---------------------- | ----------- |
+| University             | thing       |
+|                        |             |
+| Department             | University  |
+| ArtificialIntelligence | Department  |
+| ComputerScience        | Department  |
+|                        |             |
+| Staff                  | University  |
+| Instructor             | Staff       |
+| Manager                | Staff       |
+|                        |             |
+| Course                 | University  |
+| CoreCourse             | Course      |
+| ElectiveCourse         | Course      |
+|                        |             |
+| Student                | University  |
+| GraduateStudent        | Student     |
+| UndergraduateStudent   | Student     |
 
 ---
 
@@ -57,56 +50,56 @@ Finally, each staff can be either a manager or an instructor.
 
 ## #hasDepartment
 
-| Domain | Range |
-| --- | --- |
+| Domain     | Range      |
+| ---------- | ---------- |
 | University | Department |
 
 ## #hasStaff
 
-| Domain | Range |
-| --- | --- |
+| Domain     | Range |
+| ---------- | ----- |
 | University | Staff |
 
 ## #hasStudent
 
-| Domain | Range |
-| --- | --- |
+| Domain     | Range   |
+| ---------- | ------- |
 | University | Student |
-| Department |  |
+| Department |         |
 
 ## #isEnrolled
 
-| Domain | Range |
-| --- | --- |
+| Domain  | Range      |
+| ------- | ---------- |
 | Student | Department |
 
 ## #isManagerOf
 
-| Domain | Range |
-| --- | --- |
+| Domain  | Range      |
+| ------- | ---------- |
 | Manager | University |
-|  | Department |
+|         | Department |
 
 ## #isTeaching
 
-| Domain | Range |
-| --- | --- |
+| Domain     | Range  |
+| ---------- | ------ |
 | Instructor | Course |
 
 **Disjoint With: `#takes`**
 
 ## #registeredBy
 
-| Domain | Range |
-| --- | --- |
+| Domain | Range   |
+| ------ | ------- |
 | Course | Student |
 
 **Inverse Of:** #takes
 
 ## #takes
 
-| Domain | Range |
-| --- | --- |
+| Domain  | Range  |
+| ------- | ------ |
 | Student | Course |
 
 **Inverse Of: #**registeredBy
@@ -119,55 +112,55 @@ Finally, each staff can be either a manager or an instructor.
 
 ## #address
 
-| Domain | Range |
-| --- | --- |
-| #Staff | xsd:string |
-| #Student |  |
+| Domain   | Range      |
+| -------- | ---------- |
+| #Staff   | xsd:string |
+| #Student |            |
 
 ## #code
 
-| Domain | Range |
-| --- | --- |
+| Domain      | Range      |
+| ----------- | ---------- |
 | #Department | xsd:string |
-| #Course |  |
+| #Course     |            |
 
 ## #course_credit_hours
 
-| Domain | Range |
-| --- | --- |
+| Domain  | Range      |
+| ------- | ---------- |
 | #Course | xsd:double |
 
 ## #dob
 
-| Domain | Range |
-| --- | --- |
+| Domain   | Range        |
+| -------- | ------------ |
 | #Student | xsd:dateTime |
-| #Staff |  |
+| #Staff   |              |
 
 ## #id
 
-| Domain | Range |
-| --- | --- |
-| #Staff | xsd:int |
-| #Student |  |
+| Domain   | Range   |
+| -------- | ------- |
+| #Staff   | xsd:int |
+| #Student |         |
 
 ## #name
 
-| Domain | Range |
-| --- | --- |
-| #Staff | xsd:string |
-| #Student |  |
+| Domain   | Range      |
+| -------- | ---------- |
+| #Staff   | xsd:string |
+| #Student |            |
 
 ## #salary
 
-| Domain | Range |
-| --- | --- |
+| Domain | Range   |
+| ------ | ------- |
 | #Staff | xsd:int |
 
 ## #student_gpa
 
-| Domain | Range |
-| --- | --- |
+| Domain   | Range      |
+| -------- | ---------- |
 | #Student | xsd:double |
 
 ---
@@ -200,11 +193,9 @@ Finally, each staff can be either a manager or an instructor.
 
 ---
 
-
 ## RDF Graph
 
 ![rdf schema for University ontology](rdf_schema.png)
-
 
 ## Entity Constraints
 
