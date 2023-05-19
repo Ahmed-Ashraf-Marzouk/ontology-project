@@ -31,8 +31,18 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 ## Java Application
 
+### GUI
+
 ![GUI](gui.jpg)
 ![Possible Queries](queries.jpg)
+
+### Sample Outputs
+
+![Sample Output - All Staff](output1.jpg)
+![Sample Output - All Instances](output2.jpg)
+![Sample Output - Construct Query](output3.jpg)
+![Sample Output - Descripe Query](output4.jpg)
+![Sample Output - Ask Query](output5.jpg)
 
 ## SPARQL Queries
 
