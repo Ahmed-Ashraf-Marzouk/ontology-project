@@ -46,8 +46,7 @@ The ontology was implemented using Protégé, a free and open-source ontology ed
 
 ## SPARQL Queries
 
-1. Query Description
-   ![Query result ](assets/sparql1.jpg)
+It can be found in this [link](SPARQL-Queries.txt)
 
 ## Usage
 
